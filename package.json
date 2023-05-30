@@ -1,0 +1,22 @@
+{
+  "name": "webAuthn-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-ui": "cd web && ng build",
+    "start": "node api/index.js",
+    "postinstall": "cd web && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hr",
+  "license": "ISC",
+  "dependencies": {
+    "@simplewebauthn/server": "^7.2.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-basic-auth": "^1.2.1"
+  }
+}

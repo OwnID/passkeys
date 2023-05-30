@@ -1,0 +1,18 @@
+<div class="container" >
+    <div class="content">
+        <nav class="own-nav-tabs">
+           <a class="own-nav-link active" routerLink="../login">Log in</a>
+            <a class="own-nav-link" routerLink="../registration">Create Account</a>
+        </nav>
+        <div class="unite-form">
+            Sign-in
+        </div>
+        <form class="own-form" [formGroup]="form" (ngSubmit)="login()">
+            <div class="email-label" >
+                Enter your user name to continue:
+            </div>
+            <input class="own-input" type="email" placeholder="Email" formControlName="username">
+            <button class="own-button" type="submit">Sign-in</button>
+        </form>
+    </div>
+</div>

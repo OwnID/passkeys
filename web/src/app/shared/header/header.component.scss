@@ -1,0 +1,54 @@
+.header {
+  width:100%;
+  min-height: 96px;
+  background: white;
+  display:flex;
+  .inner {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 32px;
+    padding-right: 32px;
+    .column {
+      align-self: center;
+
+      &.column:nth-child(1) {
+        display: flex;
+        gap: 10px;
+      }
+
+      &.column:nth-child(2) {
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .demo-wording {
+        display: flex;
+
+        span {
+          align-self: center;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+
+      a.contact-sales-button {
+        text-decoration: none;
+        button {
+          border: 1px solid #007AFF;
+          border-radius: 6px;
+          color: #007AFF;
+          display: flex;
+          padding: 8px 24px;
+          background: white;
+          height: 40px;
+          width: 140px;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

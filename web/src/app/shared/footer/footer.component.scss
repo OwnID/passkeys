@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 2.5rem;
+  width: 100%;
+  nav {
+    display: flex;
+    gap: 25px;
+    a {
+      color: #111D29;
+      font-size: 14px;
+    }
+  }
+}
+
+.footer-nav-item {
+  color: #5b7388;
+  font-size: 0.9rem;
+  line-height: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  &.crafted-by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
